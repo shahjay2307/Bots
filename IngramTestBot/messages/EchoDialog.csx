@@ -30,7 +30,7 @@ public class EchoDialog : IDialog<object>
     public virtual async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
     {
         var message = await argument;
-        if (message.Text == "reset")
+        if (message.Text == "retest")
         {
             PromptDialog.Confirm(
                 context,
